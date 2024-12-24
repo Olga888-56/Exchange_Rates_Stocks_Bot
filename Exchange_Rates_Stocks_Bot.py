@@ -2,24 +2,14 @@ import logging
 import requests
 import settings
 
-from emoji import emojize
+
 from glob import glob
-from telegram import ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-from random import choice, randint
+from handlers import greet_user, user_coordinates
 
 logging.basicConfig(filename='bot.log', level=logging.INFO)
 
-def greet_user(update, context):
-    print("Вызван /start")
-    context.user_data['emoji'] = get_smile(context.user_data)
-    my_keyboard = ReplyKeyboardMarkup([
-        ['/currency', '/Курсы криптовалют', '/Курсы акций'],
-        ['/Справка']])
-    print(f"Привет!{context.user_data['emoji']}")
-    update.message.reply_text(
-        f"Привет!{context.user_data['emoji']}", 
-        reply_markup=my_keyboard)
+
     
 def get_exchange_rates(api_key):
     url = f'https://data.fixer.io/api/latest?access_key={api_key}'
@@ -54,11 +44,9 @@ def out_cur(update,context):
 #        }
 #    }
 
-def get_smile(user_data):
-    if 'emoji' not in user_data:
-        smile = choice(settings.USER_EMOJI)
-        return emojize(smile, language = 'alias')
-    return user_data['emoji']
+
+
+
 
 def main():
     mybot = Updater(settings.API_KEY, use_context=True)
@@ -67,6 +55,7 @@ def main():
     dp.add_handler(CommandHandler("start", greet_user))
     dp.add_handler(CommandHandler("currency", out_cur))
     dp.add_handler(MessageHandler(Filters.text, get_exchange_rates))
+    dp.add_handler(MessageHandler(Filters.location, user_coordinates))
 #    dp.add_handler(MessageHandler(Filters.regex('^(Курсы валют)$'), get_exchange_rates))
     
     mybot.start_polling()

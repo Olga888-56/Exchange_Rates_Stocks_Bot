@@ -4736,3 +4736,1362 @@ INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
 WARNING:telegram.ext.updater:Exiting immediately!
 INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
 WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 4, in anketa_start
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 332, in post
+    body=json.dumps(data).encode('utf-8'),
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ReplyKeyboardRemove is not JSON serializable
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 4, in anketa_start
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 332, in post
+    body=json.dumps(data).encode('utf-8'),
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ReplyKeyboardRemove is not JSON serializable
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 4, in anketa_start
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 332, in post
+    body=json.dumps(data).encode('utf-8'),
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ReplyKeyboardRemove is not JSON serializable
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 4, in anketa_start
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 332, in post
+    body=json.dumps(data).encode('utf-8'),
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ReplyKeyboardRemove is not JSON serializable
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\util\retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 338, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 331, in post
+    result = self._request_wrapper('POST', url,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 4, in anketa_start
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 332, in post
+    body=json.dumps(data).encode('utf-8'),
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ReplyKeyboardRemove is not JSON serializable
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 4, in anketa_start
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 332, in post
+    body=json.dumps(data).encode('utf-8'),
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ReplyKeyboardRemove is not JSON serializable
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\util\retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\handlers.py", line 10, in greet_user
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 331, in post
+    result = self._request_wrapper('POST', url,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 4, in anketa_start
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 332, in post
+    body=json.dumps(data).encode('utf-8'),
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ReplyKeyboardRemove is not JSON serializable
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 4, in anketa_start
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 332, in post
+    body=json.dumps(data).encode('utf-8'),
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ReplyKeyboardRemove is not JSON serializable
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\handlers.py", line 10, in greet_user
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 349, in send_message
+    return self._message(url, data, disable_notification=disable_notification,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 168, in _message
+    data['reply_markup'] = reply_markup.to_json()
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\base.py", line 54, in to_json
+    return json.dumps(self.to_dict())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type KeyboardButton is not JSON serializable
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\util\retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 338, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 331, in post
+    result = self._request_wrapper('POST', url,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\util\retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 338, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 331, in post
+    result = self._request_wrapper('POST', url,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 20, in anketa_name
+    reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+                 ^^^^^^^^^^^^^^^^^^^
+NameError: name 'ReplyKeyboardMarkup' is not defined. Did you mean: 'ReplyKeyboardRemove'?
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 20, in anketa_name
+    reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+                 ^^^^^^^^^^^^^^^^^^^
+NameError: name 'ReplyKeyboardMarkup' is not defined. Did you mean: 'ReplyKeyboardRemove'?
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 19, in anketa_name
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 231, in fun
+    args, kw = fix(args, kw, sig)
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 203, in fix
+    ba = sig.bind(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 3259, in bind
+    return self._bind(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 3174, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'text'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 19, in anketa_name
+    update.message.reply_text(
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\message.py", line 510, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 231, in fun
+    args, kw = fix(args, kw, sig)
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 203, in fix
+    ba = sig.bind(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 3259, in bind
+    return self._bind(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 3174, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'text'
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\util\retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 338, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 331, in post
+    result = self._request_wrapper('POST', url,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\util\retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 338, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 331, in post
+    result = self._request_wrapper('POST', url,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_exchange_rates() takes 1 positional argument but 2 were given
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 29, in selected_currency
+    update.message.reply_text(f'Выбрана валюта {update.message.text}{rate}')
+                                                                     ^^^^
+NameError: name 'rate' is not defined
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 29, in selected_currency
+    rate = data['rates'].get(context.user_data["anketa"]["selected_currency"])
+           ^^^^
+NameError: name 'data' is not defined
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 29, in selected_currency
+    rate = data['rates'].get(update.message.text)
+           ^^^^
+NameError: name 'data' is not defined
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\util\retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\projects\diplom\env\Lib\site-packages\urllib3\connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEV\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 380, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\updater.py", line 338, in polling_action_cb
+    updates = self.bot.get_updates(self.last_update_id,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\bot.py", line 2136, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 331, in post
+    result = self._request_wrapper('POST', url,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\utils\request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\env\Lib\site-packages\telegram\ext\handler.py", line 119, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projects\diplom\anketa.py", line 29, in selected_currency
+    rate = rates[update.message.text]
+           ^^^^^
+NameError: name 'rates' is not defined. Did you mean: 'bytes'?
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+WARNING:telegram.ext.updater:Exiting immediately!

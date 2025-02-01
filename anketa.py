@@ -1,4 +1,5 @@
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
+from handlers import currencies_handler
 
 def anketa_start(update, context):
     update.message.reply_text(
@@ -15,12 +16,14 @@ def anketa_name(update, context):
         return "name"
     else:
         context.user_data["anketa"] = {"name": user_name}
-        reply_keyboard = [["EUR", "USD", "CNY", "GBP", "TRY"]]
+        
+
+        reply_keyboard = [['EUR'],['USD'],['GBP'],['JPY'],['CNY']]
         update.message.reply_text(
             "Выберите интересующую вас валюту",
             reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
-        )
-    #    print("что-то пошло не так")
+       )
+        print("что-то пошло не так")
         return "selected_currency"
     
 def selected_currency(update,context):

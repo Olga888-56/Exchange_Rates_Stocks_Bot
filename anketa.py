@@ -29,4 +29,5 @@ def anketa_name(update, context):
 def selected_currency(update,context):
     context.user_data["anketa"]["selected_currency"] = update.message.text
     print(context.user_data["anketa"]["selected_currency"])
+    print(context)
     update.message.reply_text(f'Выбрана валюта {update.message.text}')

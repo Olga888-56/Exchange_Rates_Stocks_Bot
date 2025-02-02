@@ -11,13 +11,16 @@ from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, Conv
 from telegram import Update
 from anketa import anketa_start, anketa_name, selected_currency
 from handlers import greet_user, user_coordinates, currencies_handler
-from jobs import send_cur_rate
+##from jobs import send_cur_rate
 
 logging.basicConfig(filename='bot.log', level=logging.INFO)
 
 
     
-def get_exchange_rates(api_key):
+def get_exchange_rates(api_key = ""):
+    if api_key == "":
+        api_key = settings.Exchanger_API_KEY
+        print(api_key)
     url = f'https://data.fixer.io/api/latest?access_key={api_key}&symbols=USD,EUR,GBP,JPY,CNY'
     response = requests.get(url)
 #    data = json.load(response.text)
@@ -57,6 +60,8 @@ def save_to_csv(rates):
         writer.writerows(data_to_save)
     print("Данные успешно сохранены в currency.csv")
 
+
+
 #def save_cur_rates_to_csv(rates, cur_csv):
 #    with open(cur_csv, 'w', encoding='utf-8', newline='') as file:
 #        writer = csv.writer(file)
@@ -64,11 +69,6 @@ def save_to_csv(rates):
 #        for currency, rate in rates.items():
 #            writer.writerow([currency, rate])
     
-
-
-api_key = '36141d9f61e2efc0816722f5663278d0'  
-rates = get_exchange_rates(api_key)
-
 
 #if rates:
 #    save_cur_rates_to_csv(rates, 'cur_csv')
@@ -81,8 +81,8 @@ with open('currency.json', 'w', encoding='utf-8', newline='') as cur_json:
     fields = ['cur_name', 'rates']
     writer = csv.writer(cur_json)
     writer.writerow(['Currency', 'Rate'])
-    print(type(rates))
-    print(rates)
+##    print(type(rates))
+##    print(rates)
 ##    for currency, rate in rates.items():
 #        print(type(row))
 ##        writer.writerow([currency, rate])
@@ -112,12 +112,13 @@ with open('currency.json', 'r', encoding='utf-8') as cur_json:
 ##    for currency, rate in cur_rates_dict.items():
 ##       writer.writerow([currency, rate])
 
-print(rates)
+##print(rates)
 
-def out_cur(update,context):
+def currencies_update(update,context):
+    api_key = settings.Exchanger_API_KEY
     context = get_exchange_rates(api_key)
     print(context)
-    update.message.reply_text(rates)
+    update.message.reply_text(context)
    
 def load_rates_from_csv(currency):
     rates = {}
@@ -146,7 +147,7 @@ def main():
     mybot = Updater(settings.API_KEY, use_context=True)
     
     jq = mybot.job_queue
-    jq.run_repeating(send_cur_rate, interval = 10)
+    jq.run_repeating(get_exchange_rates, interval = 10)
 
     dp = mybot.dispatcher
 
@@ -164,8 +165,8 @@ def main():
     
     dp.add_handler(anketa)
     dp.add_handler(CommandHandler("start", greet_user))
-    dp.add_handler(CommandHandler("currency", out_cur))
-    dp.add_handler(MessageHandler(Filters.text, get_exchange_rates))
+    dp.add_handler(CommandHandler("currency", currencies_update))
+##    dp.add_handler(MessageHandler(Filters.text, get_exchange_rates))
     dp.add_handler(MessageHandler(Filters.location, user_coordinates))
     dp.add_handler(MessageHandler(Filters.regex('^(Курсы валют)$'), currencies_handler))
     

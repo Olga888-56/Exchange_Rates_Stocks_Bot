@@ -3,6 +3,7 @@ from random import choice, randint
 import settings
 from telegram import ReplyKeyboardMarkup, KeyboardButton
 
+
 def get_smile(user_data):
     if 'emoji' not in user_data:
         smile = choice(settings.USER_EMOJI)
@@ -11,5 +12,5 @@ def get_smile(user_data):
 
 def main_keyboard():
     return ReplyKeyboardMarkup([
-        ['/currency', '/Курсы криптовалют', '/Курсы акций', '/Валюта по умолчанию'],
+        ['/currency', '/Курсы криптовалют', '/Курсы акций', '/update_rates'],
         ['/Справка'], ['Заполнить анкету'], [KeyboardButton('Мои координаты', request_location=True)]])

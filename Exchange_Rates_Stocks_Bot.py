@@ -11,6 +11,7 @@ from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, Conv
 from telegram import Update
 from anketa import anketa_start, anketa_name, selected_currency
 from handlers import greet_user, user_coordinates, currencies_handler
+from save_to_csv import save_to_csv
 ##from jobs import send_cur_rate
 
 logging.basicConfig(filename='bot.log', level=logging.INFO)
@@ -24,6 +25,7 @@ def get_exchange_rates(api_key = ""):
         print(api_key)
     url = f'https://data.fixer.io/api/latest?access_key={api_key}&symbols=USD,EUR,GBP,JPY,CNY'
     response = requests.get(url)
+   
 
 
     if response.status_code == 200:
@@ -35,28 +37,6 @@ def get_exchange_rates(api_key = ""):
     else:
         print("Ошибка при запросе к API:", response.status_code)
     return None, None
-
-
-
-def save_to_csv(rates):
-    if not rates:
-        print("Нет данных для сохранения")
-        return
-           
-
-    data_to_save = [
-        ["Валюта", "Курс"],
-        ["USD", rates["USD"]],
-        ["EUR", rates["EUR"]],
-        ["GPB", rates["GPB"]],
-        ["JPY", rates["JPY"]],
-        ["CNY", rates["CNY"]],
-    ]
-
-    with open('currency.csv', 'w', encoding='utf-8', newline='') as cur_csv:
-        writer = csv.writer(cur_csv)
-        writer.writerows(data_to_save)
-    print("Данные успешно сохранены в currency.csv")
 
 
 with open('currency.json', 'w', encoding='utf-8', newline='') as cur_json:
@@ -107,7 +87,7 @@ def main():
     dp.add_handler(anketa)
     dp.add_handler(CommandHandler("start", greet_user))
     dp.add_handler(CommandHandler("currency", currencies_update))
-##    dp.add_handler(MessageHandler(Filters.text, get_exchange_rates))
+    dp.add_handler(CommandHandler("update_rates", get_exchange_rates))
     dp.add_handler(MessageHandler(Filters.location, user_coordinates))
     dp.add_handler(MessageHandler(Filters.regex('^(Курсы валют)$'), currencies_handler))
     

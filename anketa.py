@@ -23,11 +23,10 @@ def anketa_name(update, context):
             "Выберите интересующую вас валюту",
             reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
        )
-        print("что-то пошло не так")
         return "selected_currency"
     
 def selected_currency(update,context):
     context.user_data["anketa"]["selected_currency"] = update.message.text
     print(context.user_data["anketa"]["selected_currency"])
-    print(context)
+###    print(context.user_data["rates"])
     update.message.reply_text(f'Выбрана валюта {update.message.text}')

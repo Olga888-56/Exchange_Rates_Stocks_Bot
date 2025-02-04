@@ -15,7 +15,8 @@ from handlers import greet_user, user_coordinates, currencies_handler
 
 logging.basicConfig(filename='bot.log', level=logging.INFO)
 
-
+def get_exchange_rates_updater(context):
+    get_exchange_rates()
     
 def get_exchange_rates(api_key = ""):
     if api_key == "":
@@ -23,7 +24,7 @@ def get_exchange_rates(api_key = ""):
         print(api_key)
     url = f'https://data.fixer.io/api/latest?access_key={api_key}&symbols=USD,EUR,GBP,JPY,CNY'
     response = requests.get(url)
-#    data = json.load(response.text)
+
 
     if response.status_code == 200:
         data = response.json()
@@ -34,10 +35,7 @@ def get_exchange_rates(api_key = ""):
     else:
         print("Ошибка при запросе к API:", response.status_code)
     return None, None
-#        return response['rates'], ['RUB']
-##        return response.json()
-##    else:
-##        return f"Error: {response.status_code}"
+
 
 
 def save_to_csv(rates):
@@ -61,64 +59,20 @@ def save_to_csv(rates):
     print("Данные успешно сохранены в currency.csv")
 
 
-
-#def save_cur_rates_to_csv(rates, cur_csv):
-#    with open(cur_csv, 'w', encoding='utf-8', newline='') as file:
-#        writer = csv.writer(file)
-#        writer.writerow(['Currency', 'Rate'])
-#        for currency, rate in rates.items():
-#            writer.writerow([currency, rate])
-    
-
-#if rates:
-#    save_cur_rates_to_csv(rates, 'cur_csv')
-
 with open('currency.json', 'w', encoding='utf-8', newline='') as cur_json:
-#    data = json.load(cur_json)
-#    print(data)
-#with open('currency.json', 'r', encoding='utf-8') as cur_json:
-#    rates = data['rates']
     fields = ['cur_name', 'rates']
     writer = csv.writer(cur_json)
     writer.writerow(['Currency', 'Rate'])
-##    print(type(rates))
-##    print(rates)
-##    for currency, rate in rates.items():
-#        print(type(row))
-##        writer.writerow([currency, rate])
-#        print(row)
 
-#with open('currency.json', 'r') as cur_json:
-#    data = json.load(cur_json)
-#def get_selected_cur_rate(update: Update, context: CallbackContext):
-#    selected_cur = context.user_data.get("anketa", {}).get("selected_currency")
-#    rate = data['rates'].get(selected_cur)
-#    if rate:
-#        print(f"The exchange rate for {selected_cur} is: {rate}")
-#    else:
-#        print(f"Exchange rate for {selected_cur} not found.")
-
-# Следующие строки закомментировала до января
 with open('currency.json', 'r', encoding='utf-8') as cur_json:
     lines = cur_json.readlines()
 
-##cur_rates_line = lines[5]
-##cur_rates_dict = eval(cur_rates_line.split(",")[0].split(",")[0])
-##print(cur_rates_dict)
-
-##with open('currency.csv', 'w', newline='', encoding='utf-8') as cur_csv:
-##    writer = csv.writer(cur_csv)
-##    writer.writerow(['Currency', 'Rate'])
-##    for currency, rate in cur_rates_dict.items():
-##       writer.writerow([currency, rate])
-
-##print(rates)
-
 def currencies_update(update,context):
     api_key = settings.Exchanger_API_KEY
-    context = get_exchange_rates(api_key)
-    print(context)
-    update.message.reply_text(context)
+    rates = get_exchange_rates(api_key)
+###    context.user_data["rates"] = rates
+    print(rates)
+    update.message.reply_text(rates)
    
 def load_rates_from_csv(currency):
     rates = {}
@@ -127,27 +81,14 @@ def load_rates_from_csv(currency):
         for row in reader:
             currency, rate = row
             print(currency)
-#            rates[currency] = float(rate)
     print(rates)
-
-##rates = load_rates_from_csv('currency.csv')
-
-
-#user_currency = selected_currency.upper()
-
-##if selected_currency in rates:
-##    print(f"Курс {user_currency}: {rates[user_currency]}")
-##else:
-##    print("Курс по данной валюте не найден.")
-
-
 
 
 def main():
     mybot = Updater(settings.API_KEY, use_context=True)
     
     jq = mybot.job_queue
-    jq.run_repeating(get_exchange_rates, interval = 10)
+    jq.run_repeating(get_exchange_rates_updater, interval = 600)
 
     dp = mybot.dispatcher
 

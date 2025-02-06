@@ -23,10 +23,11 @@ def get_exchange_rates(api_key = ""):
     if api_key == "":
         api_key = settings.Exchanger_API_KEY
         print(api_key)
+        print("Данные получены")
     url = f'https://data.fixer.io/api/latest?access_key={api_key}&symbols=USD,EUR,GBP,JPY,CNY'
     response = requests.get(url)
-   
-
+    print(response)
+    
 
     if response.status_code == 200:
         data = response.json()
@@ -38,6 +39,7 @@ def get_exchange_rates(api_key = ""):
         print("Ошибка при запросе к API:", response.status_code)
     return None, None
 
+    
 
 with open('currency.json', 'w', encoding='utf-8', newline='') as cur_json:
     fields = ['cur_name', 'rates']

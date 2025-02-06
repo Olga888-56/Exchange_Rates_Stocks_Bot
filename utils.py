@@ -12,5 +12,5 @@ def get_smile(user_data):
 
 def main_keyboard():
     return ReplyKeyboardMarkup([
-        ['/currency', '/Курсы криптовалют', '/Курсы акций', '/update_rates'],
+        ['/currency', '/update_rates'],
         ['/Справка'], ['Заполнить анкету'], [KeyboardButton('Мои координаты', request_location=True)]])

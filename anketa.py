@@ -11,6 +11,7 @@ def anketa_start(update, context):
 
 def anketa_name(update, context):
     user_name = update.message.text
+    print(user_name)
     if len(user_name.split()) < 2:
         update.message.reply_text("Пожалуйста, введите имя и фамилию")
         return "name"

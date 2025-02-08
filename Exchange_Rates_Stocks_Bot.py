@@ -88,8 +88,8 @@ def main():
     
     dp.add_handler(anketa)
     dp.add_handler(CommandHandler("start", greet_user))
-    dp.add_handler(CommandHandler("currency", currencies_update))
-    dp.add_handler(CommandHandler("update_rates", get_exchange_rates))
+    dp.add_handler(CommandHandler("update_rates", currencies_update))
+##    dp.add_handler(CommandHandler("update_rates", get_exchange_rates))
     dp.add_handler(MessageHandler(Filters.location, user_coordinates))
     dp.add_handler(MessageHandler(Filters.regex('^(Курсы валют)$'), currencies_handler))
     

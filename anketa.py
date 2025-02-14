@@ -1,5 +1,7 @@
-from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
+from telegram import ParseMode, ReplyKeyboardMarkup, ReplyKeyboardRemove
 from handlers import currencies_handler
+from db import db, get_or_create_user, update_user_currency
+
 
 def anketa_start(update, context):
     update.message.reply_text(
@@ -28,6 +30,9 @@ def anketa_name(update, context):
     
 def selected_currency(update,context):
     context.user_data["anketa"]["selected_currency"] = update.message.text
+    user_text = f"""<b>Выбрана валюта</b>: {context.user_data["anketa"]["selected_currency"]}"""
     print(context.user_data["anketa"]["selected_currency"])
 ###    print(context.user_data["rates"])
-    update.message.reply_text(f'Выбрана валюта {update.message.text}')
+    update.message.reply_text(user_text)
+    user_id = update.message.from_user.id
+    update_user_currency(db, context.user_data['chat_id'], context.user_data['anketa_name'])
